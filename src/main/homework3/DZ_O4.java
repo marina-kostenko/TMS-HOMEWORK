@@ -28,15 +28,12 @@ public class DZ_O4 {
         System.out.println(Arrays.toString(arr2));
 
         int sum1 = 0;
+        int sum2 = 0;
         for (int i = 0; i < arr1.length; i++) {
             sum1 += arr1[i];
+            sum2 += arr2[i];
         }
         double average1 = (double) sum1 / arr1.length;
-
-        int sum2 = 0;
-        for (int j = 0; j < arr2.length; j++) {
-            sum2 += arr2[j];
-        }
         double average2 = (double) sum2 / arr2.length;
 
         if (average1 > average2) {

@@ -17,27 +17,25 @@ public class DZ_O1 {
             arr[i] = r.nextInt(10);
         }
         System.out.print(Arrays.toString(arr)); //выводим массив на экран
-
         System.out.println();
+
         Scanner s = new Scanner(System.in);
         System.out.println("Введите число для поиска в массиве от 0 до 10");
-        while (s.hasNextInt()) {
-            int a = s.nextInt();            //задаем число для поиска в массиве
-            boolean result = false;          //объявлем переменную result с начальным значением false
-            for (int j = 0; j < arr.length; ) {
 
-                if (a == arr[j]) {              //если заданное число совпало с нулевой ячейкой
-                    result = true;              //то присваиваем перем.result значение true
-                    break;                      //завершаем цикл
-                } else j++;                     //иначе переходим к следующей ячейке для сравнения
+        int a = s.nextInt();            //задаем число для поиска в массиве
+        boolean result = false;          //объявлем переменную result с начальным значением false
+        for (int j = 0; j < arr.length; j++) {
+            if (a == arr[j]) {              //если заданное число совпало с нулевой ячейкой
+                result = true;              //то присваиваем перем.result значение true
+                break;                      //завершаем цикл
             }
-            if (result)                         //если переменной присвоилось значение true:
-                System.out.println("Данное число присутствует в массиве");
-            else
-                System.out.println("Данное число отсутствует в массиве");
-
-            System.out.println("Введите число для поиска в массиве от 0 до 10");
         }
+        if (result)                         //если переменной присвоилось значение true:
+            System.out.println("Данное число присутствует в массиве");
+        else
+            System.out.println("Данное число отсутствует в массиве");
+
+
     }
 }
 

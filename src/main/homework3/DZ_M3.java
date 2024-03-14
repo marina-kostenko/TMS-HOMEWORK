@@ -30,10 +30,10 @@ public class DZ_M3 {
             System.out.println();
         }
         System.out.print("Диагональ массива = ");
-        for (int i = 0, j = 0; i < (n <= m ? n : m); i++) {
-            int d = arr[i][j];                  // диагональ
+        int k = n <= m ? n : m;
+        for (int i = 0; i < k; i++) {
+            int d = arr[i][i];                  // диагональ
             System.out.print(d + " ");
-            j++;
         }
     }
 }
