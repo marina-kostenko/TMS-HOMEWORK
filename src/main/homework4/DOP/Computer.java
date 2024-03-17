@@ -1,11 +1,10 @@
 package main.homework4.DOP;
 
-public class Computer
-{
-    int price;
-    String model;
-    RAM ram;
-    HDD hdd;
+public class Computer {
+    public int price;
+    public String model;
+    public RAM ram;
+    public HDD hdd;
 
     Computer(int price, String model)
     {
@@ -23,7 +22,7 @@ public class Computer
         this.hdd = new HDD(nameHhd, volumeHdd, typeHdd);
     }
 
-    void computerInform()
+    public void computerInform()
     {
         System.out.println("Стоимость" + " " + price + " " + "Модель" + " " + model + " " + "RAM" + " " + ram.name + " " + ram.volume + " " + "HDD" + " " + hdd.name + " " + hdd.volume + " " + hdd.type);
     }

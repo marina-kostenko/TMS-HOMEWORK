@@ -1,10 +1,9 @@
 package main.homework4.DOP;
 
-public class HDD
-{
-    String name;
-    int volume;
-    String type;
+public class HDD {
+    public String name;
+    public int volume;
+    public String type;
 
     HDD()
     {
@@ -16,7 +15,8 @@ public class HDD
         this.volume = volume;
         this.type = type;
     }
-    void hddInform()
+
+    public void hddInform()
     {
         System.out.println("Название" + " " + name + " " + "Объем" + volume + " " + "Тип" + " " + type);
     }

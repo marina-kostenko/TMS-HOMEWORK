@@ -1,9 +1,8 @@
 package main.homework4.DOP;
 
-public class RAM
-{
-    String name;
-    int volume;
+public class RAM {
+    public String name;
+    public int volume;
 
     RAM()
     {
@@ -15,7 +14,7 @@ public class RAM
         this.volume = volume;
     }
 
-    void ramInform()
+    public void ramInform()
     {
         System.out.println("Название" + " " + name + " " + "Объем" + " " + volume);
     }

@@ -8,10 +8,14 @@ package main.homework4.DZ1;
 
 import java.util.Scanner;
 
-public class CreditCard
-{
-    int account;
-    int currentAmount;
+public class CreditCard {
+    private int account;
+    private int currentAmount;
+
+    public int getCurrentAmount()
+    {
+        return currentAmount;
+    }
 
     CreditCard(int account, int currentAmount)
     {
@@ -19,20 +23,18 @@ public class CreditCard
         this.currentAmount = currentAmount;
     }
 
-    void debit()
+    public void debit(int currentAmount)
     {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Введите сумму для зачисления на карту");
-        currentAmount += s.nextInt();
+        this.currentAmount +=currentAmount;
     }
 
-    void credit()
+    public void credit(int currentAmount)
     {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Введите сумму для снятия с карты");
-        currentAmount -= s.nextInt();
+
+        this.currentAmount -= currentAmount;
     }
-    void currentInform()
+
+    public void currentInform()
     {
         System.out.println(account + " " + currentAmount);
     }
