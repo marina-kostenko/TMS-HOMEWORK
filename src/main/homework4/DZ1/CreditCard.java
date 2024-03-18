@@ -25,13 +25,17 @@ public class CreditCard {
 
     public void debit(int currentAmount)
     {
-        this.currentAmount +=currentAmount;
+        this.currentAmount += currentAmount;
     }
 
     public void credit(int currentAmount)
     {
+        if (currentAmount <= this.currentAmount) {
+            this.currentAmount -= currentAmount;
+        } else {
+            System.out.println("Недостаточно средств");
+        }
 
-        this.currentAmount -= currentAmount;
     }
 
     public void currentInform()

@@ -24,12 +24,8 @@ public class Main {
         myCard2.debit(s.nextInt());
 
         System.out.println("Введите сумму для cнятия с карты");
-        int amount = s.nextInt();
-        if (amount < myCard3.getCurrentAmount()) {
-            myCard3.credit(amount);
-        } else {
-            System.out.println("Недостаточно средств");
-        }
+        myCard3.credit(s.nextInt());
+
         myCard1.currentInform();
         myCard2.currentInform();
         myCard3.currentInform();
