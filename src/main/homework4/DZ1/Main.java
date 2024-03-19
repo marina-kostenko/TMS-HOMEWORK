@@ -24,7 +24,7 @@ public class Main {
         myCard2.debit(s.nextInt());
 
         System.out.println("Введите сумму для cнятия с карты");
-        myCard3.credit(s.nextInt());
+        System.out.println(myCard3.credit(s.nextInt()));
 
         myCard1.currentInform();
         myCard2.currentInform();

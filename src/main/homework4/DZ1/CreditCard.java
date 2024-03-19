@@ -28,12 +28,13 @@ public class CreditCard {
         this.currentAmount += currentAmount;
     }
 
-    public void credit(int currentAmount)
+    public String credit(int currentAmount)
     {
         if (currentAmount <= this.currentAmount) {
             this.currentAmount -= currentAmount;
+            return "Списание произведено";
         } else {
-            System.out.println("Недостаточно средств");
+            return "Недостаточно средств";
         }
 
     }
