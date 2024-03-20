@@ -13,15 +13,13 @@ public class Main {
         arr[0] = new Circle(s.nextInt());
 
         System.out.println("Введите стороны квадрата");
-        int sqSide = s.nextInt();
-        arr[1] = new Square(sqSide, sqSide);
+        arr[1] = new Square(s.nextInt());
 
         System.out.println("Введите стороны прямоугольника");
         arr[2] = new Rectangle(s.nextInt(), s.nextInt());
 
         System.out.println("Введите стороны квадрата");
-        sqSide = s.nextInt();
-        arr[3] = new Square(sqSide, sqSide);
+        arr[3] = new Square(s.nextInt());
 
         System.out.println("Введите радиус круга");
         arr[4] = new Circle(s.nextInt());

@@ -9,6 +9,15 @@ public class Circle extends Figure {
         this.r = r;
     }
 
+    public int getR()
+    {
+        return r;
+    }
+
+    public void setR(int r)
+    {
+        this.r = r;
+    }
 
     @Override
     public double area()
