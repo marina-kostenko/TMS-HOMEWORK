@@ -21,15 +21,5 @@ public class Square extends Rectangle {
         super.setSide2(side2);
     }
 
-    @Override
-    public double area()
-    {
-        return super.area();
-    }
 
-    @Override
-    public double perimetr()
-    {
-        return super.perimetr();
-    }
 }
