@@ -3,8 +3,13 @@ package main.homework8;
 public class Phone {
 
     private long number;
-    protected String model;
-    protected int weight;
+    private String model;
+    private int weight;
+
+    Phone()
+    {
+
+    }
 
     Phone(long number, String model, int weight)
     {
@@ -20,10 +25,6 @@ public class Phone {
 
     }
 
-    Phone()
-    {
-
-    }
 
     public void receiveCall(String name)
     {
@@ -46,5 +47,30 @@ public class Phone {
             System.out.println("Сообщение отправлено: " + i);
         }
 
+    }
+
+    public void setNumber(long number)
+    {
+        this.number = number;
+    }
+
+    public String getModel()
+    {
+        return model;
+    }
+
+    public void setModel(String model)
+    {
+        this.model = model;
+    }
+
+    public int getWeight()
+    {
+        return weight;
+    }
+
+    public void setWeight(int weight)
+    {
+        this.weight = weight;
     }
 }
