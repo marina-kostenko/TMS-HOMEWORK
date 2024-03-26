@@ -6,19 +6,19 @@ public class Phone {
     private String model;
     private int weight;
 
-    Phone()
+    public Phone()
     {
 
     }
 
-    Phone(long number, String model, int weight)
+    public Phone(long number, String model, int weight)
     {
         this(number, model);
         this.weight = weight;
 
     }
 
-    Phone(long number, String model)
+    public Phone(long number, String model)
     {
         this.number = number;
         this.model = model;
